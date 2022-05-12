@@ -1,0 +1,8 @@
+#!/bin/bash 
+name=$(who | awk '{print $1}')
+path=/home/$name/.garbage_collector/
+size=$( du -s $path | awk '{print $1 }')
+if [ $size -gt 1000 ]
+then 
+rm -R $path*
+fi  
