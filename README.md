@@ -10,7 +10,7 @@ NOTE : DONT USE QUTATION MARK IN TERMINAL WHILE ENTERING COMMANDS     for eg- WR
       im going to use crontab command for automate the script enter the command in your terminal " chron -e "
 4.Step 
       a file will open at the end of the file enter this " * 12 * * * ./adel "  
-note : keep the adel script in the home directory 
+note : keep the adel script in the home directory if the file move to different location please enter the path in the crontab otherwise it wont work
 
 5.Step 
       crontab command will run the script every 12 hours & also the script will empty the trash when it reach 1000kb 
